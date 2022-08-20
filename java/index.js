@@ -14,7 +14,7 @@ function aumento1(mes, salarioDic) {
 
 function aumentoAcumulativo(mes, salarioDic) {
     let aumentoAcumulativo = (parseFloat(salarioDic) + parseFloat((mes.porcentaje * salarioDic) / 100)) * (parseFloat(mes.porcentaje / 100) + 1)
-    /** parseFloat((mes.porcentaje / 100) + 1); */
+    * (parseFloat(mes.porcentaje / 100) + 1); 
     console.log(`Sueldo acumulativo ${aumentoAcumulativo}`)
 }
 
