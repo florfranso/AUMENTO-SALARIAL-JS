@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+    <section class="contact">
+        <div class="u-wrapper">
+            <div class="contact-content">
+
+                <form id="form" class="form" action="https://formspree.io/f/xknenqvj" method="POST">
+                    <h3 class="tag"><span>HABLEMOS</span></h3>
+                    <label for="name">Nombre Completo <span>*</span></label>
+                    <input name="name" required type="text" id="name" placeholder="NOMBRE y APELLIDO">
+                    <label for="email">Correo electrónico <span>*</span></label>
+                    <input name="email" type="text" id="email" required placeholder="flor@gmail.com">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn primary full">enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../java/formulario.js"></script>
+
+</body>
+
+</html>

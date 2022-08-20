@@ -1,0 +1,143 @@
+h1 {
+    color: #2C3333;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    background: #F8F9D7;
+
+    /*     background-image: linear-gradient(to top, #FBD6D2, #F190B7); */
+    width: 100%;
+    height: 15vh;
+}
+
+
+h2 {
+    width: 100%;
+    text-align: center;
+    background: #F8F9D7;
+    font-weight: 900;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    color: #A2D5AB;
+    /*   #6E85B7; */
+    line-height: 60px;
+}
+
+.h3 {
+    font-size: 48px;
+    line-height: 77px;
+}
+
+
+
+
+.grisOscuro {
+    background-color: #2C3333;
+}
+
+.azulOscuro {
+    background-color: #395B64;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.celeste {
+    background-color: #A5C9CA;
+}
+
+.claro {
+    background-color: #E7F6F2;
+}
+
+
+/* FORMULARIO CONTACTO */
+.u-wrapper {
+    max-inline-size: 1232px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+}
+
+.contact {
+    margin-block-end: 5em;
+}
+
+.btn {
+    /* font-family: var(--font); */
+    border-radius: 90px;
+    letter-spacing: 1.25px;
+    background: initial;
+    block-size: 50px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid var(--black);
+    font-weight: bold;
+    padding: 0 1.5em;
+}
+
+.btn.full {
+    width: 100%;
+}
+
+.btn.primary {
+    background: var(--primary);
+}
+
+.btn span {
+    vertical-align: middle;
+}
+
+.tag span {
+    padding: .5em;
+    background: var(--black);
+    color: var(--primary);
+    box-shadow: -4px 4px 0 white;
+}
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+}
+
+.form label span {
+    color: #DA1414;
+}
+
+.form input,
+.form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+}
+
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+}
+
+
