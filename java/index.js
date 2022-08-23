@@ -14,7 +14,7 @@ function aumento1(mes, salarioDic) {
 
 function aumentoAcumulativo(mes, salarioDic) {
     let aumentoAcumulativo = (parseFloat(salarioDic) + parseFloat((mes.porcentaje * salarioDic) / 100)) *
-    ((parseFloat(mes.porcentaje) / 100) + 1) /* * ((mes.porcentaje / 100) + 1) */; 
+        ((parseFloat(mes.porcentaje) / 100) + 1) * ((mes.porcentaje / 100) + 1);
     console.log(`Sueldo acumulativo ${aumentoAcumulativo}`)
 }
 
@@ -188,9 +188,7 @@ function agregarMes(e) {
         //Base diciembre
         aumento1(incrementoSalarial[0], salarioDic)
 
-        /*  aumento1(incrementoSalarial[1], salarioDic)
- 
-         aumento1(incrementoSalarial[2], salarioDic) */
+
     } else if (opcionSeleccionada === "ACUMULATIVO") {
 
         aumentoAcumulativo(incrementoSalarial[0], salarioDic)
