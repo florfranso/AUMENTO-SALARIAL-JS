@@ -6,17 +6,6 @@ class Aumento {
     }
 }
 
-//funciones para calcular aumentos
-function aumento1(mes, salarioDic) {
-    let resutaldo = parseFloat(salarioDic) + parseFloat((mes.porcentaje * salarioDic) / 100)
-    console.log(`Sueldo a ${mes.mes} ${resutaldo}`)
-}
-
-function aumentoAcumulativo(mes, salarioDic) {
-    let aumentoAcumulativo = (parseFloat(salarioDic) + parseFloat((mes.porcentaje * salarioDic) / 100)) *
-        ((parseFloat(mes.porcentaje) / 100) + 1) * ((mes.porcentaje / 100) + 1);
-    console.log(`Sueldo acumulativo ${aumentoAcumulativo}`)
-}
 
 //funcion que dice si ya hay datos cargados de esa persona o no
 let nombreUsuario;
@@ -172,32 +161,34 @@ function agregarMes(e) {
     console.log("La opcion elegida es: " + opcionSeleccionada);
 
 
-    //???????
-    const incrementoSalarial = []
-
-    for (let i = 0; i < 3; i++) {
-
-        const mes1 = new Aumento(mes, porcentaje, salarioDic);
-
-        incrementoSalarial.push(mes1);
-
+    //funciones para calcular aumento
+    //base diciembre
+    function aumento1() {
+        let resutaldo = parseFloat(mes1.salarioDic) + (parseFloat((mes1.porcentaje * salarioDic) / 100));
+        console.log(`Sueldo a ${mes1.mes} ${resutaldo}`)
     }
+
+    //acumulativo
+    mes1[mes, porcentaje, salarioDic]
+    mes1.forEach((mes) => console.log(mes.mes, mes.porcentaje))
+    
+    function aumentoAcumulativo() {
+        let aumentoAcumulativo = (parseFloat(mes1.salarioDic) + (parseFloat((mes1.porcentaje * salarioDic) / 100)))
+            * ((parseFloat(mes1.porcentaje) / 100) + 1);
+        console.log(`Sueldo acumulativo ${aumentoAcumulativo}`)
+    }
+
 
     if (opcionSeleccionada === "BASE DICIEMBRE") {
 
         //Base diciembre
-        aumento1(incrementoSalarial[0], salarioDic)
-
+        aumento1(mes1)
 
     } else if (opcionSeleccionada === "ACUMULATIVO") {
-
-        aumentoAcumulativo(incrementoSalarial[0], salarioDic)
+        aumentoAcumulativo(mes1)
     } else {
-        console.log("elegir")
+        console.log(); ("elegir")
     }
-
-
-
 }
 
 
