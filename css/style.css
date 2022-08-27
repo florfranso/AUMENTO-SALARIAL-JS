@@ -14,7 +14,7 @@
 h1 {
     color: #2C3333;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     background: #F8F9D7;
@@ -36,12 +36,42 @@ h2 {
     margin: 1rem;
 }
 
-.h3 {
+h3 {
     font-size: 48px;
     line-height: 77px;
+    text-align: center;
 }
 
+h4 {
+    font-size: 25px;
+    margin-left: 2rem;
 
+}
+
+.h4Formulario {
+    font-size: 25px;
+    margin-left: 1rem;
+}
+
+#select {
+    margin-left: 2rem;
+}
+
+#formulario-mes{
+    margin-left: 2rem;
+}
+
+/* parrafo index */
+.parrafo {margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#container {
+    margin-left: 2rem;
+}
 
 
 .grisOscuro {
@@ -103,7 +133,7 @@ h2 {
 }
 
 .btn.primary {
-    background: var(--primary);
+    background: #395B64;
 }
 
 .btn span {
@@ -111,18 +141,17 @@ h2 {
 }
 
 .tag span {
-    padding: 10rem;
     background: var(--black);
     color: var(--primary);
-    box-shadow: -4px 4px 0 white;
-    margin: 2rem;
+    box-shadow: -4px 4px 0 #395B64;
 }
-
 
 p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: justify;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .contact-content h3 {

@@ -6,7 +6,6 @@ class Aumento {
     }
 }
 
-
 //funcion que dice si ya hay datos cargados de esa persona o no
 let nombreUsuario;
 
@@ -17,7 +16,7 @@ function manejadorFormularioUsuario(e) {
     nombreUsuario = document.getElementById("user").value;
 
     let listaDeMeses = document.getElementById("listaDeMeses");
-    const meses = JSON.parse(localStorage.getItem(nombreUsuario));
+    const meses = JSON.parse(sessionStorage.getItem(nombreUsuario));
 
     meses == null ? listaDeMeses.innerHTML = "<h2>No hay meses seleccionados</h2>" : mostrarMeses(meses);
     validarFormulario(e);
@@ -158,24 +157,25 @@ function agregarMes(e) {
 
     //FORMULA PARA CALCULAR AUMENTO
     const opcionSeleccionada = document.getElementById("select").value;
-    console.log("La opcion elegida es: " + opcionSeleccionada);
 
-
-    //funciones para calcular aumento
     //base diciembre
     function aumento1() {
+
         let resutaldo = parseFloat(mes1.salarioDic) + (parseFloat((mes1.porcentaje * salarioDic) / 100));
-        console.log(`Sueldo a ${mes1.mes} ${resutaldo}`)
+
+        let salario = document.getElementById("resultadoAumentos");
+        salario.innerHTML = `<h4> Sueldo a ${mes1.mes} ${resutaldo} </h4>`;
     }
 
     //acumulativo
-    mes1[mes, porcentaje, salarioDic]
-    mes1.forEach((mes) => console.log(mes.mes, mes.porcentaje))
-    
+
     function aumentoAcumulativo() {
+
         let aumentoAcumulativo = (parseFloat(mes1.salarioDic) + (parseFloat((mes1.porcentaje * salarioDic) / 100)))
             * ((parseFloat(mes1.porcentaje) / 100) + 1);
-        console.log(`Sueldo acumulativo ${aumentoAcumulativo}`)
+
+        let salario = document.getElementById("resultadoAumentos");
+        salario.innerHTML = `<h4> Sueldo acumulativo a ${mes1.mes} ${aumentoAcumulativo} </h4>`;
     }
 
 

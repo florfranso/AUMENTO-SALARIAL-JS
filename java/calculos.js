@@ -114,3 +114,9 @@ function aumento1() {
     let resutaldo = parseFloat (mes1.salarioDic) + (parseFloat((mes1.porcentaje * salarioDic) / 100));
     console.log(`Sueldo a ${mes1.mes} ${resutaldo}`)
 } */
+
+
+
+
+const opcionSeleccionada = document.getElementById("select").value;
+console.log("La opcion elegida es: " + opcionSeleccionada);

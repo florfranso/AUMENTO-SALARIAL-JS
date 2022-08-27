@@ -40,47 +40,52 @@
             </div>
         </nav>
     </header>
+    <main>
+        <h1>INCREMENTO SALARIAL</h1>
+        <p class="parrafo">Esta aplicación fue creada con el objetivo de poder calcular los aumentos salariales anuales o mensuales
+            según lo
+            requieran.
+        </p>
+        <h2>¿CÓMO FUNCIONA?</h2>
+        <p class="parrafo"> Luego de completar el formulario con tus datos, debes elegir en las opciones el calculo que desees realizar,BASE
+        DICIEMBRE O ACUMULATIVO.</p>
 
-    <h1>INCREMENTO SALARIAL</h1>
-    <p>Esta aplicación fue creada con el objetivo de poder calcular los aumentos salariales anuales o mensuales según lo
-        requieran.
-    <h2>¿CÓMO FUNCIONA?</h2>
-    Luego de completar el formulario con tus datos, debes elegir en las opciones el calculo que desees realizar,BASE
-    DICIEMBRE O ACUMULATIVO.
+        <p class="parrafo">BASE DICIEMBRE: calcula en base al salario de Diciembre del año anterior los aumentos.
+        ACUMULATIVO: toma el salario de Diciembre para comenzar y va sumando mes a mes los aumentos, acumulandolos al
+        anterior.
+        </p>
+        <h2>Complete los siguientes campos</h2>
 
-    BASE DICIEMBRE: calcula en base al salario de Diciembre del año anterior los aumentos.
-    ACUMULATIVO: toma el salario de Diciembre para comenzar y va sumando mes a mes los aumentos, acumulandolos al
-    anterior.
-    </p>
-    <h2>Complete los siguientes campos</h2>
+        <div id="container">
+            <form id="formularioUsuario">
+                <label for="user">Ingrese sus datos</label>
+                <input id="user" type="text" name="nombre" size="40" placeholder="Nombre Apellido">
+                <label for="user">EMAIL</label>
+                <input type="email" placeholder="ejemplo@hotmail.com" />
+                <input type="submit" value="Enviar" />
+            </form>
 
-    <div id="container">
-        <form id="formularioUsuario">
-            <label for="user">Ingrese sus datos</label>
-            <input id="user" type="text" name="nombre" size="40" placeholder="Nombre Apellido">
-            <label for="user">EMAIL</label>
-            <input type="email" placeholder="ejemplo@hotmail.com" />
-            <input type="submit" value="Enviar" />
-        </form>
+        </div>
 
-    </div>
+        <div id="opciones"></div>
+        <div id="eleccion"></div>
+        <div id="seleccionar"></div>
+        <ul id="listaDeMeses"></ul>
+        <div id="resultadoAumentos"></div>
 
-    <div id="opciones"></div>
-    <div id="eleccion"></div>
-    <div id="seleccionar"></div>
-    <ul id="listaDeMeses"></ul>
+    </main>
 
     <footer class="text-center text-white" style="background-color: #fdf9fc;">
         <!-- Grid container -->
         <div class="container p-4"></div>
         <!-- Grid container -->
 
-        <!-- Copyright -->
+        <!-- Copyright  -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
             <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
 
-            <!-- Copyright -->
+            <!-- Copyright  -->
             <a href="https://www.flaticon.es/iconos-gratis/contabilidad" title="contabilidad iconos">Contabilidad iconos
                 creados
                 por kerismaker - Flaticon</a>
