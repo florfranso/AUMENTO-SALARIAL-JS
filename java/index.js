@@ -161,7 +161,7 @@ function agregarMes(e) {
     //base diciembre
     function aumento1() {
 
-        let resutaldo = parseFloat(mes1.salarioDic) + (parseFloat((mes1.porcentaje * salarioDic) / 100));
+        let resutaldo = parseInt(mes1.salarioDic) + (parseInt((mes1.porcentaje * salarioDic) / 100));
 
         let salario = document.getElementById("resultadoAumentos");
         salario.innerHTML = `<h4> Sueldo a ${mes1.mes} ${resutaldo} </h4>`;
@@ -171,8 +171,8 @@ function agregarMes(e) {
 
     function aumentoAcumulativo() {
 
-        let aumentoAcumulativo = (parseFloat(mes1.salarioDic) + (parseFloat((mes1.porcentaje * salarioDic) / 100)))
-            * ((parseFloat(mes1.porcentaje) / 100) + 1);
+        let aumentoAcumulativo = (parseInt(mes1.salarioDic) + (parseInt((mes1.porcentaje * salarioDic) / 100)))
+            * ((parseInt(mes1.porcentaje) / 100) + 1);
 
         let salario = document.getElementById("resultadoAumentos");
         salario.innerHTML = `<h4> Sueldo acumulativo a ${mes1.mes} ${aumentoAcumulativo} </h4>`;
